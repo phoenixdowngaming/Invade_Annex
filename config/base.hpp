@@ -1,17 +1,37 @@
-class base_camp
+class base_phoenix
 {
-	name = "Base Camp";
+	name = "Camp Phoenix";
 	isOwned = 1;
 	groups = 2;
 	respawnGroups = 1;
 	respawnTime = 300;
 	vehicles[] = 
 	{
-		{"B_Truck_01_transport_F", "base_camp_respawn_1"},
-		{"B_Truck_01_transport_F", "base_camp_respawn_2"},
-		{"B_Truck_01_transport_F", "base_camp_respawn_3"}
+		//Land Vehicles
+		{"B_APC_Tracked_01_rcws_F", "phoenix_spawn_1_land"},
+		{"B_APC_Wheeled_01_cannon_F", "phoenix_spawn_2_land"},
+		{"B_MBT_01_TUSK_F", "phoenix_spawn_3_land"},
+		{"B_APC_Tracked_01_AA_F", "phoenix_spawn_4_land"},
+		{"I_C_Offroad_02_unarmed_F", "phoenix_spawn_5_land"},
+		{"I_C_Offroad_02_unarmed_F", "phoenix_spawn_6_land"},
+		{"B_LSV_01_armed_F", "phoenix_spawn_7_land"},
+		{"B_LSV_01_armed_F", "phoenix_spawn_8_land"},
+		{"B_LSV_01_unarmed_F", "phoenix_spawn_9_land"},
+		{"B_LSV_01_unarmed_F", "phoenix_spawn_10_land"},
+		{"B_MRAP_01_hmg_F", "phoenix_spawn_11_land"},
+		{"B_MRAP_01_F", "phoenix_spawn_12_land"},
+
+		//Air Vehicles
+		{"B_T_VTOL_01_infantry_F", "phoenix_spawn_1_air"},
+		{"B_Heli_Transport_03_unarmed_F", "phoenix_spawn_2_air"},
+		{"B_Heli_Attack_01_F", "phoenix_spawn_3_air"},
+		{"B_Heli_Transport_01_F", "phoenix_spawn_4_air"},
+		{"B_Heli_Light_01_F", "phoenix_spawn_5_air"},
+		{"B_Heli_Light_01_F", "phoenix_spawn_6_air"},
+		{"B_Plane_CAS_01_F", "phoenix_spawn_7_air"}
 	};
 };
+
 
 class base_alpha
 {

@@ -1,6 +1,6 @@
 /***********************************************************\
 	LEAVE THESE BE AND THE REST OF THE FILE IS YOURS!
-  RAWR!
+
 	*/
 		debugMode = false;
 
@@ -11,6 +11,12 @@
 
 	YE-ARGH! THANK YE!
 \***********************************************************/
+
+
+
+[] execvm "PDG\injured.sqf";
+[] execVM "PDG\zlt_fieldrepair.sqf";
+[] execVM "PDG\sa_ropes.sqf";
 
 waitUntil {alive player};
 player allowDamage false;
