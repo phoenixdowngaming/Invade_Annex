@@ -13,7 +13,7 @@
 \***********************************************************/
 
 
-
+[] execVM "PDG\xian_ai_act.sqf";
 [] execvm "PDG\injured.sqf";
 [] execVM "PDG\zlt_fieldrepair.sqf";
 [] execVM "PDG\sa_ropes.sqf";
