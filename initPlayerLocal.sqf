@@ -1,3 +1,8 @@
+
+player enableFatigue false;
+player addMPEventhandler ["MPRespawn", {player enableFatigue false}];
+
+
 // Initializes Variables
 _arsenalNames = [];
 _arsenalDataLocal = [];
@@ -17,3 +22,5 @@ missionnamespace setvariable ["bis_fnc_saveInventory_data",_arsenalDataLocal];
 [player,_arsenalNames] call bis_fnc_setrespawninventory;
  
 // This File runs locally when the player is killed, Runs the same code block as initPlayerLocal.sqf, but this iteration will include any changes you made between map start or previous death and most recent death.
+
+#include "PDG\SHK_Fastrope.sqf"		

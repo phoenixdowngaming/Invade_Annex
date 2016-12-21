@@ -11,26 +11,9 @@
 
 	YE-ARGH! THANK YE!
 \***********************************************************/
-
+call compileFinal preprocessFileLineNumbers "FAR_revive\FAR_revive_init.sqf";
 
 [] execVM "PDG\xian_ai_act.sqf";
 [] execvm "PDG\injured.sqf";
 [] execVM "PDG\zlt_fieldrepair.sqf";
 [] execVM "PDG\sa_ropes.sqf";
-
-waitUntil {alive player};
-player allowDamage false;
-onMapSingleClick "(vehicle player) setPos _pos;";
-
-onEachFrame
-{
-	{
-		_colour = if (side _x == EAST) then { [1,0,0,0.5] } else { [0,0,1,0.5] };
-		drawIcon3D
-		[
-			"a3\ui_f\data\map\MapControl\hospital_ca.paa",
-			_colour,
-			_x, 0.5, 0.5, 45
-		];
-	} forEach allUnits;
-};

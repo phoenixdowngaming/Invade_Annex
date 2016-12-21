@@ -36,7 +36,7 @@ class base_phoenix
 class base_alpha
 {
 	name = "Base Alpha";
-	isOwned = 0;
+	isOwned = 1;
 	groups = 3;
 	respawnGroups = 1;
 	respawnTime = 300;

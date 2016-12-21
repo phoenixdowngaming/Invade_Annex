@@ -1,4 +1,7 @@
-//onPlayerRespawn.sqf
+if (isDedicated) then
+{
+	[player, ["Earplugs IN", {3 fadeSound 0.02}]] remoteExec ["addAction", -2];
+};
 
 private ["_role", "_safeItems"];
 
